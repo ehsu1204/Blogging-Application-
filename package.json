@@ -1,9 +1,34 @@
 {
+  "name": "blogging-application--main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehsu1204/Blogging-Application-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ehsu1204/Blogging-Application-/issues"
+  },
+  "homepage": "https://github.com/ehsu1204/Blogging-Application-#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongoose": "^6.5.3",
     "nodemon": "^2.0.19"
+  },
+  "devDependencies": {
+    "jest": "^29.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }

@@ -10,7 +10,7 @@ logger.info('connecting to', config.URL);
 mongoose
   .connect(config.URL)
   .then(() => {
-    logger.info('connceted to mongoDB');
+    logger.info('connected to mongoDB');
   })
   .catch((error) => {
     logger.error('error conneting', error.message);
