@@ -1,4 +1,5 @@
 const config = require('./utils/config');
+
 const express = require('express');
 require('express-async-errors');
 const app = express();
@@ -9,9 +10,9 @@ const loginRouter = require('./Controllers/Login');
 const middleware = require('./utils/middleware');
 const logger = require('./utils/logger');
 const cors = require('cors');
-
+console.log('hello');
 logger.info('connecting to', config.URL);
-
+console.log(config.URL);
 mongoose //connects to database
   .connect(config.URL)
   .then(() => {
